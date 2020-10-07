@@ -19,6 +19,15 @@ public class ArrayAction {
         return Math.max(arr[index], getMaxRecursion(arr, index - 1));
     }
 
+    public static int getMaxRecursion(int[] arr, int L, int R) {
+        if (L == R) {
+            return arr[L];
+        }
+        int mid = (L + R) / 2;
+        int maxLeft = getMaxRecursion(arr, L, mid);
+        int maxRight = getMaxRecursion(arr, mid + 1, R);
+        return Math.max(maxLeft, maxRight);
+    }
 
     public static int getMinRecursion(int[] arr, int index) {
         if (index == 0) {
@@ -27,6 +36,15 @@ public class ArrayAction {
         return Math.min(arr[index], getMinRecursion(arr, index - 1));
     }
 
+    public static int getMinRecursion(int[] arr, int L, int R) {
+        if (L == R) {
+            return arr[L];
+        }
+        int mid = (L + R) >> 1;
+        int minLeft = getMinRecursion(arr, L, mid);
+        int minRight = getMinRecursion(arr, mid + 1, R);
+        return Math.min(minLeft, minRight);
+    }
 
     public static int getMax(int[] arr) {
         int maxValue = arr[0];
