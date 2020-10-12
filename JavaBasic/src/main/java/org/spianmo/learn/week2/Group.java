@@ -3,6 +3,7 @@ package org.spianmo.learn.week2;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @ClassName Group
@@ -13,6 +14,7 @@ import lombok.Setter;
 
 @AllArgsConstructor
 @Setter
+@ToString
 @Getter
 public class Group {
     private String groupId;
