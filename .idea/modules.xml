@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBasic/JavaBasic.iml" filepath="$PROJECT_DIR$/JavaBasic/JavaBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaLearn.iml" filepath="$PROJECT_DIR$/.idea/JavaLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MavenDemo/MavenDemo.iml" filepath="$PROJECT_DIR$/MavenDemo/MavenDemo.iml" />
     </modules>
   </component>
 </project>
