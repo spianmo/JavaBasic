@@ -49,13 +49,6 @@ public class Book {
         this.bookName = bookName;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(this.bookName);
-        return sb.toString();
-    }
-
     public String getIsbn() {
         return isbn;
     }
