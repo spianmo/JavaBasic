@@ -34,17 +34,10 @@ public class Book {
     private String author;
     private BigDecimal price;
     private Date publishedDate;
-
-    /**
-     * @return 返回书名
-     */
     public String getBookName() {
         return bookName;
     }
 
-    /**
-     * @param bookName Book
-     */
     public void setBookName(String bookName) {
         this.bookName = bookName;
     }
