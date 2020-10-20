@@ -2,7 +2,7 @@
 
 - [数据结构](data-structure/README.md)
   - [数组](array2.md)
-  - [栈](stack.md)
+  - [栈](arrayBaseStack.md)
   - [队列](queue.md)
   - [链表](list.md)
   - [树](tree/README.md)

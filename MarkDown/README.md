@@ -10,7 +10,7 @@
 
 - [数组](array2.md)
 - [链表](list.md)
-- [栈](stack.md)
+- [栈](arrayBaseStack.md)
 - [队列](queue.md)
 - [树](tree/README.md)
 - [图](graph.md)
