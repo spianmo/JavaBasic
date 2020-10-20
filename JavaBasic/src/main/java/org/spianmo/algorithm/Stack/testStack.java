@@ -37,11 +37,11 @@ public class testStack {
             linkedBaseStack.push(random.nextInt(100));
         }
         System.out.println("==================>栈内部："+ linkedBaseStack);
-        arrayBaseStack.push(1);
-        arrayBaseStack.push(2);
-        arrayBaseStack.push(3);
-        arrayBaseStack.push(4);
-        arrayBaseStack.push(5);
+        linkedBaseStack.push(1);
+        linkedBaseStack.push(2);
+        linkedBaseStack.push(3);
+        linkedBaseStack.push(4);
+        linkedBaseStack.push(5);
         Integer popInteger2 = linkedBaseStack.pop();
         System.out.println("==================>出栈元素为："+ popInteger2);
         System.out.println("==================>栈内部："+ linkedBaseStack);
