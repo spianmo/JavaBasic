@@ -1,6 +1,7 @@
 package org.spianmo.basic.chapter5;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -14,6 +15,17 @@ public class ListDemo {
         String c = "c";
         String d = "d";
         String apple = "apple";
+
+        List<Integer> hhh = new LinkedList<>();
+        hhh.add(1);
+        hhh.remove(0);
+
+        Integer aa = hhh.get(0);
+
+        for (Integer tmp:hhh) {
+            System.out.println(tmp);
+        }
+
         List<String> list = new ArrayList<String>();
         list.add(a);
         list.add(apple);

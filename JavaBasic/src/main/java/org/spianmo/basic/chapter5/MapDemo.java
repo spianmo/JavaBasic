@@ -12,11 +12,13 @@ import java.util.Set;
 @Deprecated
 public class MapDemo {
     public static void main(String[] args) {
+
         Map<String, String> map = new HashMap<String, String>();
         //key 是1,2,3，给人一个错觉，好像key是下标一样。不恰当的例子。请看MapDemo2
         map.put("1", "apple");
         map.put("2", "pear");
         map.put("3", "orange");
+
         System.out.println("for cycle:");
         for (int i = 1; i < map.size() + 1; i++) {
             System.out.println("第" + i + "个元素是：" + map.get(i + ""));

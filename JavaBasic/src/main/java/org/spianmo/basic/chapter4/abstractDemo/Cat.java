@@ -5,8 +5,9 @@ package org.spianmo.basic.chapter4.abstractDemo;
  * 当一个类继承的父类是抽象类，需要实现抽象类的所有抽象方法
  */
 public class Cat extends Animal {
+
     @Override
     public void cry() {
-        System.out.println("猫猫叫");
+
     }
 }

@@ -1,6 +1,6 @@
 package org.spianmo.basic.chapter4.packageDemo;
 
-public class Cat{
+ class Cat{
     public String name = "小猫";
     protected int age = 1;
     String color = "白色";

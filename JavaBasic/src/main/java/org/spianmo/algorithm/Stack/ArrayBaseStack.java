@@ -59,12 +59,12 @@ public class ArrayBaseStack<E> {
     }
 
     public void updateCapacity(int cap) {
-        E[] newData = (E[]) new Object[cap];
+        Object[] newData = new Object[cap];
         for (int i = 0; i < top; i++) {
             newData[i] = data[i];
         }
         capacity = cap;
-        data = newData;
+        data = (E[]) newData;
     }
 
     public boolean isEmpty() {
