@@ -12,12 +12,18 @@ import javax.xml.crypto.dsig.Transform;
  **/
 public class Person implements Fly, Travel {
 
-    public void speed(){
+    @Override
+    public void getSpeed() {
 
     }
 
-    public void go(){
+    @Override
+    public void onFly() {
 
     }
 
+    @Override
+    public void selectPlace(String place) {
+
+    }
 }
