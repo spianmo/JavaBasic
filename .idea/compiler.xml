@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MavenDemo" />
+        <module name="FuckSec" />
         <module name="JavaBasic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="FuckSec" target="1.8" />
       <module name="JavaBasic" target="1.8" />
       <module name="MavenDemo" target="1.8" />
     </bytecodeTargetLevel>
