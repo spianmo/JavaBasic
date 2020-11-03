@@ -1,4 +1,4 @@
-package org.spianmo.algorithm.recursion;
+package org.spianmo.algorithm.Recursion;
 
 import java.util.Arrays;
 import java.util.Random;
