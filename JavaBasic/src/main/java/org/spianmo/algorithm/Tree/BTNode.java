@@ -11,11 +11,11 @@ public class BTNode<E> {
     BTNode<E> lchild;
     BTNode<E> rchild;
 
-    public BTNode(){
+    public BTNode() {
         lchild = rchild = null;
     }
 
-    public BTNode(E d){
+    public BTNode(E d) {
         data = d;
         lchild = rchild = null;
     }
