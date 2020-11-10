@@ -1,5 +1,7 @@
 package org.spianmo.algorithm.Tree;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -56,12 +58,11 @@ public class BTreeClass {
         }
     }
 
-    public BTNode<Character> findNode(char x)
-    {
+    public BTNode<Character> findNode(char x) {
         return findNode1(b, x);
     }
 
-    private BTNode<Character> findNode1(BTNode<Character> t, char x){
+    private BTNode<Character> findNode1(BTNode<Character> t, char x) {
         BTNode<Character> p;
         if (t == null) {
             return null;
@@ -78,11 +79,11 @@ public class BTreeClass {
     }
 
 
-    public int height(){
+    public int height() {
         return height1(b);
     }
 
-    private int height1(BTNode<Character> t){
+    private int height1(BTNode<Character> t) {
         int lchildh, rchildh;
         if (t == null) {
             return 0;
@@ -93,6 +94,56 @@ public class BTreeClass {
         }
     }
 
+    public List<Character> preOrder() {
+        List<Character> list = new ArrayList<>();
+        if (this.b == null) {
+            return list;
+        }
+        preOrder1(this.b, list);
+        return list;
+    }
+
+    private void preOrder1(BTNode<Character> root, List<Character> list) {
+        if (root != null) {
+            list.add(root.data);
+            preOrder1(root.lchild, list);
+            preOrder1(root.rchild, list);
+        }
+    }
+
+    public List<Character> inOrder() {
+        List<Character> list = new ArrayList<>();
+        if (this.b == null) {
+            return list;
+        }
+        inOrder1(this.b, list);
+        return list;
+    }
+
+    private void inOrder1(BTNode<Character> root, List<Character> list) {
+        if (root != null) {
+            inOrder1(root.lchild, list);
+            list.add(root.data);
+            inOrder1(root.rchild, list);
+        }
+    }
+
+    public List<Character> postOrder() {
+        List<Character> list = new ArrayList<>();
+        if (this.b == null) {
+            return list;
+        }
+        postOrder1(this.b, list);
+        return list;
+    }
+
+    private void postOrder1(BTNode<Character> root, List<Character> list) {
+        if (root != null) {
+            postOrder1(root.lchild, list);
+            postOrder1(root.rchild, list);
+            list.add(root.data);
+        }
+    }
 
     @Override
     public String toString() {
