@@ -20,5 +20,7 @@ public class TestBTree {
         System.out.println(Arrays.toString(bTree.inOrder().toArray(new Character[]{})));
         System.out.println("=============后序遍历=============");
         System.out.println(Arrays.toString(bTree.postOrder().toArray(new Character[]{})));
+        System.out.println("=============结点个数=============");
+        System.out.println(bTree.countNode());
     }
 }

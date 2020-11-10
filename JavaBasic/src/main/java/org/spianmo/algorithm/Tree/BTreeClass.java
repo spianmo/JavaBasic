@@ -145,6 +145,21 @@ public class BTreeClass {
         }
     }
 
+    public int countNode() {
+        List<Character> list = new ArrayList<>();
+        countNode1(this.b, list);
+        return list.size();
+    }
+
+    private void countNode1(BTNode<Character> root, List<Character> list) {
+        if (root != null) {
+            countNode1(root.lchild, list);
+            countNode1(root.rchild, list);
+            list.add(root.data);
+        }
+    }
+
+
     @Override
     public String toString() {
         bstr = "";
