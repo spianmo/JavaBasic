@@ -18,6 +18,7 @@ public class MapDemo2 {
 
         System.out.println(dictionary.get("java"));
 
+
         for (String value : dictionary.values()) {
             System.out.println("书籍为:" + value);
         }

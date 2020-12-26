@@ -23,24 +23,6 @@ public class Sort {
         return array;
     }
 
-    public static int[] shellSort(int[] array) {
-        int d = array.length / 2;
-        int tmp;
-        while (d > 0) {
-            for (int i = d; i < array.length; i++) {
-                tmp = array[i];
-                int j = i - d;
-                while (j >= 0 && tmp < array[j]) {
-                    array[j + d] = array[j];
-                    j = j - d;
-                }
-                array[j + d] = tmp;
-            }
-            d = d / 2;
-        }
-        return array;
-    }
-
     public static int[] binInsertSort(int[] array) {
         int low, high, mid;
         int tmp;
